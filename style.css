@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    position: absolute;
+}
+ul li{
+    display: inline-block;
+}
+.icon1,.icon2,.icon3{
+    background: radial-gradient(circle, rgba(27,85,254,1) 30%, rgba(252,70,122,1) 100%);
+    width: 180px;
+    height: 20px;
+    border-radius: 50px;
+    margin-left: -150px;
+}
+.icon1:hover,.icon2:hover,.icon3:hover{
+    transform: translateX(60px);
+    transition-duration: 0.2s;
+    background-color: blue;
+}
+li{
+    float: right;
+    color: white;
+    margin-right: 10px;
+}

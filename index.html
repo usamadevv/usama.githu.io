@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form>
+  <input id="username">
+  <input id="password">
+  <button type="button" onclick="getinfo()">clickme</button>
+
+</form>
+</body>
+<script>
+  var data=[{
+    username:"usama",
+    password:"1234"
+  },
+  {
+     username:"usama1",
+    password:"123411"
+  },{
+     username:"usama1",
+    password:"12333"
+  }
+
+  ]
+  function getinfo(){
+ var user=document.getElementById("username").value;
+ var pass=document.getElementById("password").value;
+ console.log("Your user name is: "+user);
+ for(var i=0;i<data.length;i++)
+ {
+  if(data[i].username==user && data[i].password == pass)
+  {
+    console.log("Welcome");
+    break;
+
+  }
+  else{
+  }
+ }
+}
+ 
+</script>
+</html>
